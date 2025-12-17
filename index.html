@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="WiSe Agro Data: monitoreo agrícola con IoT, datos y recomendaciones para mejorar riego, suelo y productividad." />
+  <title>WiSe Agro Data | IoT & Analítica Agrícola</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fuente opcional; si no quieres depender de Google Fonts, puedes borrar estas 2 líneas -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Open Graph (para compartir en WhatsApp/Redes) -->
+  <meta property="og:title" content="WiSe Agro Data" />
+  <meta property="og:description" content="Monitoreo agrícola con IoT + datos + recomendaciones para mejorar decisiones en campo." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wiseagrodata.com" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Inicio WiSe Agro Data">
+        <span class="brand__mark" aria-hidden="true">Wi</span>
+        <span class="brand__name">Se Agro Data</span>
+      </a>
+
+      <input id="nav-toggle" class="nav__toggle" type="checkbox" />
+      <label class="nav__hamburger" for="nav-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav">
+        <a href="#soluciones">Soluciones</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#contacto" class="btn btn--ghost">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top" class="hero">
+    <div class="container hero__grid">
+      <section class="hero__copy">
+        <p class="pill">IoT • Analítica • Recomendaciones agronómicas</p>
+        <h1>Datos claros para decisiones inteligentes en tu cultivo.</h1>
+        <p class="lead">
+          En WiSe Agro Data conectamos sensores y análisis para ayudarte a monitorear el campo,
+          anticipar riesgos y optimizar riego y manejo del suelo.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn" href="#contacto">Quiero una demo</a>
+          <a class="btn btn--ghost" href="#soluciones">Ver soluciones</a>
+        </div>
+
+        <div class="trust">
+          <div class="trust__item">
+            <span class="trust__kpi">Low-cost</span>
+            <span class="trust__txt">Implementación modular</span>
+          </div>
+          <div class="trust__item">
+            <span class="trust__kpi">IoT</span>
+            <span class="trust__txt">Sensores en campo</span>
+          </div>
+          <div class="trust__item">
+            <span class="trust__kpi">IA</span>
+            <span class="trust__txt">Recomendaciones y alertas</span>
+          </div>
+        </div>
+      </section>
+
+      <aside class="hero__card" aria-label="Vista previa">
+        <div class="card">
+          <div class="card__top">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="card__title">Panel WiSe (demo)</span>
+          </div>
+
+          <div class="mock">
+            <div class="mock__map">
+              <div class="badge">NDVI</div>
+              <div class="grid-lines"></div>
+            </div>
+
+            <div class="mock__stats">
+              <div class="stat">
+                <span class="stat__label">Humedad suelo</span>
+                <span class="stat__value">34%</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">Temp. ambiente</span>
+                <span class="stat__value">24°C</span>
+              </div>
+              <div class="stat">
+                <span class="stat__label">pH / CE</span>
+                <span class="stat__value">6.2 / 1.1</span>
+              </div>
+            </div>
+
+            <div class="mock__alert">
+              <strong>Alerta:</strong> posible estrés hídrico en sector B (48h)
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Soluciones -->
+  <section id="soluciones" class="section">
+    <div class="container">
+      <header class="section__head">
+        <h2>Soluciones</h2>
+        <p>Una base tecnológica para monitoreo y manejo agronómico, escalable por módulos.</p>
+      </header>
+
+      <div class="grid3">
+        <article class="feature">
+          <div class="feature__icon" aria-hidden="true">💧</div>
+          <h3>Riego inteligente</h3>
+          <p>Alertas y recomendaciones basadas en humedad de suelo, clima y comportamiento del cultivo.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature__icon" aria-hidden="true">🌱</div>
+          <h3>Suelo & nutrición</h3>
+          <p>Lecturas de pH/CE/NPK (según sensor) + trazabilidad para decisiones de fertilización.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature__icon" aria-hidden="true">🛰️</div>
+          <h3>NDVI & mapas</h3>
+          <p>Visualización por lote para detectar variabilidad, estrés y priorizar recorridos de campo.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cómo funciona -->
+  <section id="como-funciona" class="section section--alt">
+    <div class="container">
+      <header class="section__head">
+        <h2>Cómo funciona</h2>
+        <p>De la medición a la acción, sin complicarte.</p>
+      </header>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step__n">1</span>
+          <div>
+            <h3>Instalación modular</h3>
+            <p>Gateway + nodos de sensores por zonas del lote (según cobertura y necesidades).</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__n">2</span>
+          <div>
+            <h3>Monitoreo en tiempo real</h3>
+            <p>Datos históricos + tendencias: clima, suelo y señales del cultivo.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__n">3</span>
+          <div>
+            <h3>Recomendaciones y alertas</h3>
+            <p>Notificaciones accionables: riego, riesgos, y prioridades de revisión.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section id="screenshots" class="section">
+    <div class="container">
+      <header class="section__head">
+        <h2>Screenshots de la app</h2>
+        <p>Ejemplos visuales (demo) de lo que verías en la plataforma.</p>
+      </header>
+
+      <div class="shots">
+        <article class="shot">
+          <div class="shot__img shot__img--1" aria-hidden="true"></div>
+          <h3>Lotes</h3>
+          <p>Listado por finca, estado general y accesos rápidos.</p>
+        </article>
+        <article class="shot">
+          <div class="shot__img shot__img--2" aria-hidden="true"></div>
+          <h3>NDVI</h3>
+          <p>Mapa por lote, sectores y evolución.</p>
+        </article>
+        <article class="shot">
+          <div class="shot__img shot__img--3" aria-hidden="true"></div>
+          <h3>Sensores</h3>
+          <p>Gráficas, máximos/mínimos y series históricas.</p>
+        </article>
+        <article class="shot">
+          <div class="shot__img shot__img--4" aria-hidden="true"></div>
+          <h3>Recomendaciones</h3>
+          <p>Acciones sugeridas y alertas priorizadas.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section section--alt">
+    <div class="container contact">
+      <div class="contact__copy">
+        <h2>Hablemos</h2>
+        <p>
+          Si quieres una demo, cotización o armar el plan de sensores para tu cultivo,
+          escríbenos y te contactamos.
+        </p>
+
+        <div class="contact__cards">
+          <div class="mini">
+            <span class="mini__k">Email</span>
+            <a class="mini__v" href="mailto:contacto@wiseagrodata.com">contacto@wiseagrodata.com</a>
+          </div>
+          <div class="mini">
+            <span class="mini__k">WhatsApp</span>
+            <span class="mini__v">+57 3XX XXX XXXX</span>
+          </div>
+          <div class="mini">
+            <span class="mini__k">Ubicación</span>
+            <span class="mini__v">Colombia</span>
+          </div>
+        </div>
+
+        <p class="note">
+          * Si aún no tienes correo con tu dominio, igual puedes usar un Gmail en el mailto.
+        </p>
+      </div>
+
+      <form class="contact__form" action="mailto:contacto@wiseagrodata.com" method="post" enctype="text/plain">
+        <label>
+          Nombre
+          <input name="nombre" placeholder="Tu nombre" required />
+        </label>
+        <label>
+          Teléfono / WhatsApp
+          <input name="telefono" placeholder="+57 ..." />
+        </label>
+        <label>
+          Mensaje
+          <textarea name="mensaje" rows="5" placeholder="Cuéntame tu cultivo, zona, y qué te gustaría monitorear." required></textarea>
+        </label>
+        <button class="btn" type="submit">Enviar</button>
+        <p class="note">Este formulario usa mailto (sin backend). Si quieres, luego lo cambiamos a un formulario real gratis (Netlify Forms / Google Forms).</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="y">2025</span> WiSe Agro Data</span>
+      <span class="footer__sep">•</span>
+      <a href="#top">Volver arriba</a>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a class="wa" href="https://wa.me/57XXXXXXXXXX" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M19.11 17.53c-.29-.14-1.7-.84-1.96-.94-.26-.1-.45-.14-.64.14-.19.29-.74.94-.91 1.13-.17.19-.33.21-.62.07-.29-.14-1.22-.45-2.32-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.46-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-1  .98-1 2.39s1.02 2.77 1.16 2.96c.14.19 2.01 3.07 4.87 4.31.68.29 1.21.47 1.63.6.68.22 1.31.19 1.8.11.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.25.17-1.36-.07-.11-.26-.18-.55-.32zM16.04 26.7c-1.85 0-3.66-.5-5.25-1.44l-3.68.97.99-3.59A10.58 10.58 0 0 1 5.42 16c0-5.86 4.77-10.62 10.62-10.62S26.66 10.14 26.66 16 21.9 26.7 16.04 26.7zm0-23.7C9.03 3 3.3 8.73 3.3 15.74c0 2.15.53 4.25 1.55 6.12L3 29l7.34-1.92a12.65 12.65 0 0 0 5.7 1.36c7.01 0 12.74-5.73 12.74-12.74C28.78 8.73 23.05 3 16.04 3z"/>
+    </svg>
+  </a>
+
+  <script>
+    // Solo para año automático (opcional)
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
